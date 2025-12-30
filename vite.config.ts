@@ -19,5 +19,9 @@ export default defineConfig({
     host: '0.0.0.0', // Required for Render to detect the port
     port: 3002,
     strictPort: false, // Vite will use PORT env var if set by Render
+    allowedHosts: [
+      'adminapp-8eiu.onrender.com',
+      '.onrender.com', // Allow all Render subdomains
+    ],
   }
 })
